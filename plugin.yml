@@ -1,0 +1,15 @@
+name: WeaponBot
+version: 1.0
+main: org.mineserver.weaponbot.WeaponBotPlugin
+api-version: 1.20
+depend: [Vault, ProtocolLib]
+softdepend: [ItemsAdder]
+commands:
+  weaponbot:
+    description: Управление Оружейником
+    permission: weaponbot.admin
+    usage: /weaponbot <spawn|skin|page|rotate|info>
+permissions:
+  weaponbot.admin:
+    description: Управление Оружейником
+    default: op
